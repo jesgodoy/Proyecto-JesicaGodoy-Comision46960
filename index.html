@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Hotel Dulce Calma</title>
+    <link rel="icon" href="assets/imagenes/icono-hotel.png" type="image/icon">
+</head>
+<body>
+    <header class="header container-fluid sticky-top ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                <img src="assets/imagenes/icono-hotel.png" alt="imagen/icono">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars fa-xl" style="color: #f7f7f7;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link link-hoteldc" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hoteldc" href="pages/estadia.html">Estancia</a>
+                        </li>
+                            <li class="nav-item">
+                            <a class="nav-link link-hoteldc" href="pages/habitaciones.html">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hoteldc" href="pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hoteldc" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/imagenes/hotel/hotel.jpg" class="d-block w-100 front-hoteldc" alt="hotel">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Dulce Calma</h1>
+                  <p class="fs-1">El Mejor Hotel del Caribe</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imagenes/hotel/piscina.jpg" class="d-block w-100 front-hoteldc" alt="piscina">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Las Vista mas increible</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imagenes/hotel/desayuno.jpg" class="d-block w-100 front-hoteldc" alt="comida">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Sabores unicos,magicos e increibles</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imagenes/hotel/spa-3.jpg" class="d-block w-100 front-hoteldc" alt="sauna">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Un lugar para disfrutar y relajarse</h2>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="bg-hoteldc py-2">
+            <div class="container d-flex justify-content-center ">
+                <form class="row text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <label for="ingreso" class="">Fecha de Ingreso</label>
+                        <input type="date" class="form-control w-100" id="ingreso" name="ingreso">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <label for="ingreso" class="">Fecha de Salida</label>
+                        <input type="date" class="form-control w-100" id="ingreso" name="ingreso">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <label for="persona" class="">Personas</label>
+                        <div class="d-flex justify-content-center">
+                            <input type="number" class="form-control w-50" id="persona" name="persona" placeholder="adultos">
+                            <input type="number" class="form-control w-50" id="persona" name="persona" placeholder="menores">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-2">
+                        <label for="habitacion" class="">Habitaciones</label>
+                        <input type="number" class="form-control w-100" id="habitacion" name="habitacion"placeholder="Cant. de Habitaciones">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-1 d-flex align-self-center">
+                        <button type="button" class="btn btn-secondary mt-1 pt-2" disabled>Reservar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <section class="container py-5">
+            <div class="row">
+                <h1 class="text-center text-dc">Hotel Divina Calma</h1>
+            </div>
+            <div class="row">
+                <p class="fs-2 fw-lighter">Dulce calma es un hotel de 5 estrellas situado en la mejor ubicacion del Caribe. Cuenta con una vista de la playa increible.</p>
+                <p class="fs-2 fw-lighter">Podes vivir una experiencia de lujo, contamos con amplias habitaciones y otros espacios como restaurante, spa y picina entre otros utilizados.</p>
+                <p class="fs-2 fw-lighter">Gracias a la opinion de nuestros Huespedes es considerado desde hace 5 anos como uno de los 3 hoteles mas lujos del mundo</p>
+            </div>  
+        </section>
+        <section class="py-3 bg-hoteldc">
+            <div class="container">
+                <div class="row">
+                    <h2 class="py-2 text-center text-dc">Conoce Nuestro Hotel</h2>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-4 menu-hoteldc">
+                        <div class="card card-menu-hoteldc" style="width: 25rem;">
+                            <img src="assets/imagenes/habitaciones/lujo1-portada.jpg" class=" w-100 image-menu" alt="habitacion">
+                            <div class="card-body">
+                                <h5 class="text-center">Habitaciones</h5>
+                                <p class="card-text">Un ambiente confortable y comodo para descansar</p>
+                                <a href="pages/habitaciones.html" class="d-flex justify-content-center">Conocer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-4 menu-hoteldc">
+                        <div class="card card-menu-hoteldc" style="width: 25rem;">
+                            <img src="assets/imagenes/estadia/portada-estadia.jpg" class="w-100 image-menu" alt="estatia-hotel">
+                            <div class="card-body">
+                                <h5 class="text-center">Estadia</h5>
+                                <p class="card-text">El mejor lugar para disfrutar, relajarse y divertirtre</p>
+                                <a href="pages/estadia.html" class="d-flex justify-content-center">Conocer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center my-4 menu-hoteldc">
+                        <div class="card card-menu-hoteldc" style="width: 25rem;">
+                            <img src="assets/imagenes/hotel/servicio-habitacion.jpg" class="w-100 image-menu" alt="servicio-habiatacion">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicios</h5>
+                                <p class="card-text">Los mejores servicios y una cálida atención</p>
+                                <a href="pages/servios.html" class="d-flex justify-content-center">Conocer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="container my-5">
+            <h1 class="text-center">Opniones de Nuestros Huespedes</h1>
+            <div id="carouselExampleIndicators" class="carousel slide ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 2"></button> 
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona1.jpg" class="card-img-top" alt="persona1">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona2.jpg" class="card-img-top" alt="persona2">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona3.jpg" class="card-img-top" alt="persona3">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona4.jpg" class="card-img-top" alt="persona4">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona5.jpg" class="card-img-top" alt="persona5">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/imagenes/hotel/persona6.jpg" class="card-img-top" alt="persona6">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>         
+    </main>
+    <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 my-3 text-center">
+                    <div>
+                        <a href="index.html">
+                            <img src="assets/imagenes/icono-hotel.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 text-center">
+                    <h4>ACERCA DE HOTEL DULCE CALMA</h4>
+                    <div class="ms-5">
+                        <ul class="text-start ms-5">
+                            <li><a href="#">Quienes somos</a></li>
+                            <li><a href="#">Nuestro equipo</a></li>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 text-center">
+                    <h4>RESERVA CON CONFIANZA</h4>
+                    <div class="ms-5">
+                        <ul class="text-start ms-5">
+                            <li><a href="#">¿Cómo hacer una reserva?</a></li>
+                            <li><a href="#">Formas de pago</a></li>
+                            <li><a href="#">Garantía de reserva segura</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Política de protección de datos</a></li>
+                            <li><a href="#">Política de cancelación de reserva</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 my-3 text-center">
+                    <h4>REDES SOCIALES</h4>
+                    <div class="my-4">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl px-2"></i>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl px-2"></i>
+                    </div>
+                </div>            
+            </div>
+            <div class="row bg-copy py-2">
+                <span class="text-center">Copyright © 2023 - Desarrollado por Jesica Godoy </span>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
