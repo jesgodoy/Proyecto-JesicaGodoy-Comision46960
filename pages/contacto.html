@@ -32,7 +32,7 @@
                         <a class="nav-link link-hoteldc" href="habitaciones.html">Habitaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-hoteldc" href="servios.html">Servicios</a>
+                        <a class="nav-link link-hoteldc" href="servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-hoteldc" href="contacto.html">Contacto</a>
@@ -43,51 +43,111 @@
       </nav>
     </header>
     <main class="main">
-        
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 my-5">
-                <div class="ms-5">
-                    <h1 class="text-center">Contactanos</h1>
-                    <h3>Tu Opinion es importante </h3>
-                    <h4>Dejanos tu consulta, opinion o sugerencia </h4>
-                </div>
-                <form action="" class="mt-3">
-                    <div class="mb-3 ms-5">
-                        <label for="Nombre" class="form-label ms-3">Nombre Completo</label>
-                        <input type="email" class="rounded-pill imput-dc ms-4" id="telefono" placeholder="Nombre y apellido">
-                    </div>
-                    <div class="mb-3 ms-5">
-                        <label for="telefono" class="form-label ms-3">Teléfono</label>
-                        <input type="email" class="rounded-pill imput-dc ms-4" id="telefono" placeholder="cod.pais + cod.area + telefono">
-                    </div>
-                    <div class="mb-3 ms-5">
-                        <label for="email" class="form-label ms-3">Email</label>
-                        <input type="email" class="rounded-pill imput-dc ms-4" id="email" placeholder="nombre@ejemplo.com">
-                    </div>
-                    <div class="mb-3 ms-5">
-                        <label for="exampleFormControlTextarea1" class="form-label ms-3">Example textarea</label>
-                        <textarea class="imput-dc ms-4" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 ms-5">
-                        <input type="checkbox" class="form-check-input ckec-dc ms-5" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                      <div class="text-center my-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                </form>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 my-5">
-                <h1 class="text-center">Visitanos</h1>
-                <i class="fa-solid fa-location-dot" style="color: #f7f7f7;"></i>
-                <h4>Paraiso Alisur 3657, Córdoba, Argentina</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.1073320868553!2d-64.25836462953023!3d-31.411862425362525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1695681332278!5m2!1ses!2sar" width="400" height="500" class="mt-4" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="card">
+            <img src="../assets/imagenes/hotel/recepcion.jpg" class="image-front-pages" alt="recepcion">
+            <div class="card-img-overlay d-flex align-items-end">
+                <h1 class="card-title mb-2 text-front-pages">Contactos</h1>
             </div>
         </div>
-
+        <div class="conteiner">
+            <div class="row p-contact">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 my-5 mx-2">
+                    <div class="border-contact pb-3">
+                        <div class="p-4">
+                            <h1 class="text-center title-hoteldc">Contactanos</h1>
+                            <h3>Tu Opinion es importante </h3>
+                            <h4>Dejanos tu consulta, opinion o sugerencia </h4>
+                        </div>
+                        <form action="#">
+                            <div class="mb-3 ms-5">
+                                <label for="Nombre" class="form-label ms-3 fs-4">Nombre Completo</label>
+                                <input type="email" class="rounded-pill imput-contact ms-4" id="telefono" placeholder="Nombre y apellido">
+                            </div>
+                            <div class="mb-3 ms-5">
+                                <label for="telefono" class="form-label ms-3 fs-4">Teléfono</label>
+                                <input type="email" class="rounded-pill imput-contact ms-4" id="telefono" placeholder="cod.pais + cod.area + telefono">
+                            </div>
+                            <div class="mb-3 ms-5">
+                                <label for="email" class="form-label ms-3 fs-4">Email</label>
+                                <input type="email" class="rounded-pill imput-contact ms-4" id="email" placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3 ms-5">
+                                <label for="exampleFormControlTextarea1" class="form-label ms-3 fs-4">Mensaje</label>
+                                <textarea class="imput-contact ms-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3 ms-5 ">
+                                <input type="checkbox" class="form-check-input form-check-contact ms-4 me-2" id="exampleCheck1">
+                                <label class="form-check-label check-contact fs-5" for="exampleCheck1">
+                                    <a href="#">Terminos y Condiciones </a>
+                                    <span>/</span>
+                                    <a href="#">Politica de Privacidad</a>
+                                </label>
+                              </div>
+                              <div class="text-center my-2">
+                                <button type="submit" class="btn reservation-button">Enviar</button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 my-5 p-contact">
+                    <div class="border-contact">
+                        <div class="p-4">
+                            <h1 class="text-center title-hoteldc">Visitanos</h1>
+                            <div>
+                                <h4><i class="fa-solid fa-location-dot mx-2" style="color: #f7f7f7;"></i>Paraiso Alisur 3657, Córdoba, Argentina</h4>              
+                            </div>  
+                        </div>
+                        <div class="ps-1 map-contact">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.1073320868553!2d-64.25836462953023!3d-31.411862425362525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1695681332278!5m2!1ses!2sar" width="500" height="620" class="ps-3 pe-1 pb-3" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 my-3 text-center">
+                <div class="d-flex justify-content-center mt-5">
+                    <a href="../index.html">
+                        <img src="../assets/imagenes/icono-hotel.png" alt="icono-hotel">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 my-3 text-center">
+                <h4>ACERCA DE HOTEL DULCE CALMA</h4>
+                    <ul class="text-start ">
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Nuestro equipo</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 my-3 text-center">
+                <h4>RESERVA CON CONFIANZA</h4>
+                    <ul class="text-start ">
+                        <li><a href="#">¿Cómo hacer una reserva?</a></li>
+                        <li><a href="#">Formas de pago</a></li>
+                        <li><a href="#">Garantía de reserva segura</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de protección de datos</a></li>
+                        <li><a href="#">Política de cancelación de reserva</a></li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 my-3 text-center">
+                <h4>REDES SOCIALES</h4>
+                <div class="my-4">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl px-2"></i>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl px-2"></i>
+                </div>
+            </div>            
+        </div>
+        <div class="row bg-copy py-2">
+            <span class="text-center">Copyright © 2023 - Desarrollado por Jesica Godoy </span>
+        </div>
+    </div>  
+    </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
