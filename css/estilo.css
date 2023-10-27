@@ -90,7 +90,7 @@ body{
    
     .card-opinions{
         width: 100%;
-        height: 62vh;
+        height: 70vh;
         border-radius: 0px 35px 0px 35px;
         -webkit-border-radius: 0px 35px 0px 35px;
         -moz-border-radius: 0px 35px 0px 35px;
@@ -293,6 +293,22 @@ body{
   }
 @media screen and (min-width:768px){
     .main{
+        .image-opinions{
+            width: 30%;
+            height: 50vh;
+        }
+    .card-opinions{
+            width: 100%;
+            height: 65vh;
+        }
+    .border-contact{
+        width: 40rem;
+    }
+    }
+    
+}
+@media screen and (min-width:992px){
+    .main{
         .text-front-pages{
             text-shadow: -8px -3px 7px rgba(0,0,0,1);
             color: rgb(247, 247, 247);
@@ -326,7 +342,7 @@ body{
             padding-left: 100px;
         }
         .border-contact{
-            width: 45rem;
+            width: 40rem;
         }
         .map-contact{
             margin-left: 90px;
