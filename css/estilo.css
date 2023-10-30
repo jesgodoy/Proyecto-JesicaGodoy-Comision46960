@@ -236,7 +236,25 @@ body{
         -webkit-border-radius: 45px 45px 45px 45px;
         -moz-border-radius: 45px 45px 45px 45px;
         background: rgb(187,187,187);
-        height: 52rem;
+        .imput-contact{
+            display: block;
+            width: 80%;
+            padding: 0.35rem 1rem;
+            font-size: 1.3rem;
+            font-weight: 40;
+            background-color: rgba(1, 1, 62, 0.263);
+            color: #e9eaeb;
+            border: 3px solid grey;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;     
+        }
+    }
+    .border-contactaaasf5668{
+        border-radius: 45px 45px 45px 45px;
+        -webkit-border-radius: 45px 45px 45px 45px;
+        -moz-border-radius: 45px 45px 45px 45px;
+        background: rgb(187,187,187);
         .imput-contact{
                 display: block;
                 width: 80%;
@@ -250,17 +268,14 @@ body{
                 -moz-appearance: none;
                 appearance: none;     
         }
-        .imput-dc::placeholder {
-            color: #e9eaeb;
-          }  
 
     }
     .form-check-contact:focus {
         border-color: #03193a;
         outline: 0;
         box-shadow: 0 0 0 0.25rem rgba(0, 4, 10, 0.25);
-      }
-      .form-check-contact:checked {
+    }
+    .form-check-contact:checked {
         background-color: #000000;
         border-color: #3f4041;
       }
@@ -276,21 +291,23 @@ body{
     background-color: rgb(41, 46, 49);
     color: rgb(247, 247, 247);
     .bg-copy{
-        background-color: rgba(1, 1, 55, 0.486);;
+        background-color: #021634;
+    }
+    .link-footer{
+        list-style: none;
+        & a{
+            color: rgb(247, 247, 247);
+            text-decoration: none;
+            &:hover{
+                color: gray;
+            }
+        }   
     }
 }
-.footer a{
-    color: rgb(247, 247, 247);
-    text-decoration: none;
-    font-size: 20px;
-}
-.footer a:hover{
-    color: gray;
+
     
 }
-.footer ul{
-    list-style: none;  
-  }
+
 @media screen and (min-width:768px){
     .main{
         .image-opinions{
@@ -337,18 +354,6 @@ body{
                                  "img6  img6    img6    img7    img7    img8    img8"
                                  "img9  img9    img9    img10   img10   img10   img10"
                                  "img9  img9    img9    img10   img10   img10   img10";
-        }
-        .p-contact{
-            padding-left: 100px;
-        }
-        .border-contact{
-            width: 40rem;
-        }
-        .map-contact{
-            margin-left: 90px;
-        }
-        .p-text-stay{
-            padding-top: 150px;
         }
         
         .image-opinions{
