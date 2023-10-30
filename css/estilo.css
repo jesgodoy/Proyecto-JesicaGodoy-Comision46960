@@ -17,11 +17,12 @@ body{
         color: rgb(247, 247, 247);
         padding: 0;
         margin-inline: 10px;
+        &:hover{
+            color: rgb(41, 46, 49);
+            background-color: rgb(247, 247, 247);
+        } 
+        
     }
-    .link-hoteldc:hover{
-        color: rgb(41, 46, 49);
-        background-color: rgb(247, 247, 247);
-    }    
 }
 .main{
     .text-front-pages{
@@ -69,11 +70,10 @@ body{
         font-size: 1.5rem;
         text-decoration: none;
         color: rgb(247, 247, 247);
-        
+        &:hover{
+            color: rgb(41, 46, 49);;
+        } 
     }
-    .menu-link a:hover{
-        color: rgb(41, 46, 49);;
-    }   
     .box-stay{
         border-radius: 22px 22px 22px 22px;
         -webkit-border-radius: 22px 22px 22px 22px;
@@ -82,32 +82,20 @@ body{
         .image-box-stay{
             width: 100%;
             height: 30vh;
-            border-radius: 22px 22px 22px 22px;
-            -webkit-border-radius: 22px 22px 22px 22px;
-            -moz-border-radius: 22px 22px 22px 22px;
+            border-radius: 25px
         }
     } 
-   
     .card-opinions{
-        width: 100%;
-        height: 70vh;
-        border-radius: 0px 35px 0px 35px;
-        -webkit-border-radius: 0px 35px 0px 35px;
-        -moz-border-radius: 0px 35px 0px 35px;
-        background: rgba(0,0,28,0.45);
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
+        background: rgb(247,247,247);
+        background: radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        background: -webkit-radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        background: -moz-radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
         border: 1px solid grey;
-        .text-card-opinions{
-            border-radius: 0px 107px 0px 35px;
-            -webkit-border-radius: 0px 107px 0px 35px;
-            -moz-border-radius: 0px 107px 0px 35px;
-            background: rgb(187,187,187);
-            border: 1px solid grey;
-         }
     }
-    .image-opinions{
-        width: 40%;
-        height: 15vh;
-    }
+    
     .opinions-button{
         font-size: 2rem;
         background-color: rgb(41, 46, 49);
@@ -117,7 +105,6 @@ body{
        color:rgb(41, 46, 49);
        background-color: rgb(147,147,147);
     }
-
     .border-text-stay{
         box-shadow: 0px 0px 245px -24px rgba(99,93,93,0.97) inset;
         -webkit-box-shadow: 0px 0px 245px -24px rgba(99,93,93,0.97) inset;
@@ -125,23 +112,23 @@ body{
     }
     .list-room{
         padding-left: 10rem;
-    }
-    .list-room li{
-        list-style: square;
+        & li{
+            list-style: square;
+        }
     }
     .bg-room{
-        border-radius: 65px 65px 65px 65px;
-        -webkit-border-radius: 65px 65px 65px 65px;
-        -moz-border-radius: 65px 65px 65px 65px;
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
         background: rgb(202,203,203);
         border: 3px dashed rgba(128, 128, 128, 0.667);
         width: 40rem;
         margin-top: 1rem;
     }
     .bg-room-light{
-        border-radius: 65px 65px 65px 65px;
-        -webkit-border-radius: 65px 65px 65px 65px;
-        -moz-border-radius: 65px 65px 65px 65px;
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
         background: rgb(247,247,247);
         border: 3px dashed rgba(217,217,217);
         width: 40rem;
@@ -153,28 +140,22 @@ body{
     .front-room{
         width: 100%;
         height: 50vh;
+        border-radius: 25px; 
     }
     .box-room{
         width: 100%;
         height: 25vh;
+        border-radius:25px;
     }
     .front-room-vip{
         width: 100%;
         height: 100vh;
+        border-radius:25px;
     }
     .box-room-vip{
         width: 100%;
         height: 50vh;  
-    }
-    .border-room{
-        border-radius: 45px 45px 45px 45px;
-        -webkit-border-radius: 45px 45px 45px 45px;
-        -moz-border-radius: 45px 45px 45px 45px;
-    }
-    .border-box{
-        border-radius: 35px 35px 35px 35px;
-        -webkit-border-radius: 35px 35px 35px 35px;
-        -moz-border-radius: 35px 35px 35px 35px
+        border-radius:25px;
     }
     .border-service{
         width: 500px;
@@ -232,9 +213,9 @@ body{
         
     } 
     .border-contact{
-        border-radius: 45px 45px 45px 45px;
-        -webkit-border-radius: 45px 45px 45px 45px;
-        -moz-border-radius: 45px 45px 45px 45px;
+        border-radius: 30px 30px 30px 30px;
+        -webkit-border-radius: 30px 30px 30px 30px;
+        -moz-border-radius: 30px 30px 30px 30px;
         background: rgb(187,187,187);
         .imput-contact{
             display: block;
@@ -250,26 +231,7 @@ body{
             appearance: none;     
         }
     }
-    .border-contactaaasf5668{
-        border-radius: 45px 45px 45px 45px;
-        -webkit-border-radius: 45px 45px 45px 45px;
-        -moz-border-radius: 45px 45px 45px 45px;
-        background: rgb(187,187,187);
-        .imput-contact{
-                display: block;
-                width: 80%;
-                padding: 0.35rem 1rem;
-                font-size: 1.3rem;
-                font-weight: 40;
-                background-color: rgba(1, 1, 62, 0.263);
-                color: #e9eaeb;
-                border: 3px solid grey;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;     
-        }
-
-    }
+    
     .form-check-contact:focus {
         border-color: #03193a;
         outline: 0;
@@ -278,7 +240,7 @@ body{
     .form-check-contact:checked {
         background-color: #000000;
         border-color: #3f4041;
-      }
+    }
     .check-contact a{
         color: rgb(41, 46, 49);
         text-decoration: none;
@@ -306,7 +268,7 @@ body{
 }
 
     
-}
+
 
 @media screen and (min-width:768px){
     .main{
@@ -366,6 +328,5 @@ body{
             margin-left: 5rem; 
             justify-content: center;
         }
-       
     }
 }
