@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Akaya Kanadaka";
+    background-color: rgb(247, 247, 247);
+    .bg-hoteldc{
+        background-color: rgb(187,187,187);
+    }
+}
+.header{
+    background-color: rgb(41, 46, 49);
+    font-size: 25px;
+    .link-hoteldc {
+        color: rgb(247, 247, 247);
+        padding: 0;
+        margin-inline: 10px;
+        &:hover{
+            color: rgb(41, 46, 49);
+            background-color: rgb(247, 247, 247);
+        } 
+        
+    }
+}
+.main{
+    .text-front-pages{
+        text-shadow: -8px -3px 7px rgba(0,0,0,1);
+        color: rgb(247, 247, 247);
+        font-size: 4rem;
+    }
+    .image-front-pages{
+        height: 80vh;
+    }
+    .title-hoteldc{
+        text-shadow: -5px -3px 0px rgba(147,147,147,1);
+        font-size: 3.5rem;
+    }
+    .subtitle-hoteldc{
+        font-size: 2rem;
+    }
+    .front-hoteldc{
+        height: 80vh;
+    }
+    .text-carousel{
+        font-size: 4rem;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    }
+    .reservation-button{
+        background-color: rgb(41, 46, 49);
+        color: rgb(247, 247, 247);
+    }
+    .reservation-button:hover{
+        color: rgb(41, 46, 49);
+        background-color: rgb(247, 247, 247);
+    }
+    .menu-hoteldc{
+        .card-menu-hoteldc{
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        .image-menu{
+            height: 30vh;
+        }
+    }
+    .menu-button{
+        width: 10rem;
+    }
+    .menu-link a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: rgb(247, 247, 247);
+        &:hover{
+            color: rgb(41, 46, 49);;
+        } 
+    }
+    .box-stay{
+        border-radius: 22px 22px 22px 22px;
+        -webkit-border-radius: 22px 22px 22px 22px;
+        -moz-border-radius: 22px 22px 22px 22px;
+        background: rgb(147,147,147);
+        .image-box-stay{
+            width: 100%;
+            height: 30vh;
+            border-radius: 25px
+        }
+    } 
+    .card-opinions{
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
+        background: rgb(247,247,247);
+        background: radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        background: -webkit-radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        background: -moz-radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        border: 1px solid grey;
+    }
+    
+    .opinions-button{
+        font-size: 2rem;
+        background-color: rgb(41, 46, 49);
+        color: rgb(247, 247, 247);
+    } 
+    .opinions-button:hover{
+       color:rgb(41, 46, 49);
+       background-color: rgb(147,147,147);
+    }
+    .border-text-stay{
+        box-shadow: 0px 0px 245px -24px rgba(99,93,93,0.97) inset;
+        -webkit-box-shadow: 0px 0px 245px -24px rgba(99,93,93,0.97) inset;
+        -moz-box-shadow: 0px 0px 245px -24px rgba(99,93,93,0.97) inset;
+    }
+    .list-room{
+        padding-left: 10rem;
+        & li{
+            list-style: square;
+        }
+    }
+    .bg-room{
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
+        background: rgb(202,203,203);
+        border: 3px dashed rgba(128, 128, 128, 0.667);
+        width: 40rem;
+        margin-top: 1rem;
+    }
+    .bg-room-light{
+        border-radius: 40px 40px 40px 40px;
+        -webkit-border-radius: 40px 40px 40px 40px;
+        -moz-border-radius: 40px 40px 40px 40px;
+        background: rgb(247,247,247);
+        border: 3px dashed rgba(217,217,217);
+        width: 40rem;
+        margin-top: 1rem;
+    }
+    .room{
+        width: 50rem;
+    }
+    .front-room{
+        height: 55vh;
+        border-radius: 25px;
+    }
+    .box-room{
+        height: 25vh;
+        border-radius:25px;
+    }
+
+    .border-service{
+        width: 500px;
+        box-shadow: -2px -10px 16px 8px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -2px -10px 16px 8px rgba(0,0,0,0.54);
+        -moz-box-shadow: -2px -10px 16px 8px rgba(0,0,0,0.54);
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2,fr);
+            grid-auto-rows: 200px;
+            grid-template-areas:    'img1 img1'
+                                    'img2 img3'
+                                    'img4 img4'
+                                    'img5 img7'
+                                    'img6 img6'
+                                    'img8 img9'
+                                    'img10 img10';
+        gap:20px;
+        .image-gallery-1{
+            grid-area: img1;
+        }
+        .image-gallery-2{
+            grid-area: img2;
+        }
+        .image-gallery-3{
+            grid-area: img3;
+        }
+        .image-gallery-4{
+            grid-area: img4;
+        }
+        .image-gallery-5{
+            grid-area: img5;
+        }
+        .image-gallery-6{
+            grid-area: img6;
+        }
+        .image-gallery-7{
+            grid-area: img7;
+        }
+        .image-gallery-8{
+            grid-area: img8;
+        }
+        .image-gallery-9{
+            grid-area: img9;
+        }
+        .image-gallery-10{
+            grid-area: img10;
+        }
+        .image-gallery{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        
+    } 
+    .border-contact{
+        border-radius: 30px 30px 30px 30px;
+        -webkit-border-radius: 30px 30px 30px 30px;
+        -moz-border-radius: 30px 30px 30px 30px;
+        background: rgb(187,187,187);
+        .imput-contact{
+            display: block;
+            width: 80%;
+            padding: 0.35rem 1rem;
+            font-size: 1.3rem;
+            font-weight: 40;
+            background-color: rgba(1, 1, 62, 0.263);
+            color: #e9eaeb;
+            border: 3px solid grey;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;     
+        }
+    }
+    
+    .form-check-contact:focus {
+        border-color: #03193a;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(0, 4, 10, 0.25);
+    }
+    .form-check-contact:checked {
+        background-color: #000000;
+        border-color: #3f4041;
+    }
+    .check-contact a{
+        color: rgb(41, 46, 49);
+        text-decoration: none;
+    }
+    .check-contact a:hover{
+        color: rgb(247, 247, 247);
+    }
+}    
+.footer{
+    background-color: rgb(41, 46, 49);
+    color: rgb(247, 247, 247);
+    .bg-copy{
+        background-color: #021634;
+    }
+    .link-footer{
+        list-style: none;
+        & a{
+            color: rgb(247, 247, 247);
+            text-decoration: none;
+            &:hover{
+                color: gray;
+            }
+        }   
+    }
+}
+
+    
+
+
+@media screen and (min-width:768px){
+    .main{
+        .border-contact{
+            width: 40rem;
+    }
+
+    }
+    
+}
+@media screen and (min-width:992px){
+    .main{
+        .text-front-pages{
+            text-shadow: -8px -3px 7px rgba(0,0,0,1);
+            color: rgb(247, 247, 247);
+            font-size: 8rem;
+        }
+        .title-hoteldc{
+            text-shadow: -5px -3px 0px rgba(147,147,147,1);
+            font-size: 5rem;
+        }
+        .image-front-pages{
+            width: 100%;
+            height: 80vh;
+        }
+        .border-service{
+            margin: 50px;
+        }
+        .gallery{
+            grid-template-columns: repeat(7,1fr);
+            grid-auto-rows: 150px;
+            
+            grid-template-areas: "img2  img2    img1    img1    img1    img3    img3"
+                                 "img2  img2    img1    img1    img1    img3    img3"
+                                 "img4  img4    img1    img1    img1    img5    img5"
+                                 "img4  img4    img1    img1    img1    img5    img5"
+                                 "img6  img6    img6    img7    img7    img8    img8"
+                                 "img6  img6    img6    img7    img7    img8    img8"
+                                 "img9  img9    img9    img10   img10   img10   img10"
+                                 "img9  img9    img9    img10   img10   img10   img10";
+        }
+        
+    }
+}
