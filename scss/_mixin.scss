@@ -1,0 +1,10 @@
+@mixin fondo-color($fondo,$color){
+    background-color: $fondo;
+    color: $color;
+}
+@mixin grid ( $columnas, $espacio, $filas){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+    grid-auto-rows: $filas;
+}

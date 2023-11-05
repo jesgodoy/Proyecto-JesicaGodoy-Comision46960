@@ -1,0 +1,46 @@
+.main{
+    .border-contact{
+        border-radius: map-get($map: bordes-radius, $key: 30 );
+        background: $color-alternativo;
+        .imput-contact{
+            display: block;
+            width: 80%;
+            padding: 0.35rem 1rem;
+            font-size: 1.3rem;
+            font-weight: 40;
+            background-color: rgba(1, 1, 62, 0.263);
+            color: #e9eaeb;
+            border: 3px solid grey;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;     
+        }
+    }
+    
+    .form-check-contact{
+        &:focus {
+            border-color: #03193a;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(0, 4, 10, 0.25);
+        }
+        &:checked {
+            @include fondo-color(black, #3f4041 );
+        }
+    }
+    
+    .check-contact a{
+        color: $color-secundario;
+        text-decoration: map-get($map: $estilo, $key: ninguno );
+    }
+    .check-contact a:hover{
+        color: $color-principal;
+    }
+}    
+
+@media screen and (min-width:768px){
+    .main{
+        .border-contact{
+            width: 40rem;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.header{
+    background-color: $color-secundario;
+    .link-hoteldc {
+        color: $color-principal;
+        padding: 0;
+        margin-inline: 10px;
+        &:hover{
+            @include fondo-color ($color-principal,$color-secundario);
+        } 
+        
+    }
+}

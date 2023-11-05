@@ -6,11 +6,10 @@
 body{
     font-family: "Akaya Kanadaka";
     background-color: rgb(247, 247, 247);
-    .bg-hoteldc{
-        background-color: rgb(187,187,187);
-    }
+    
 }
 .header{
+    
     background-color: rgb(41, 46, 49);
     font-size: 25px;
     .link-hoteldc {
@@ -25,6 +24,9 @@ body{
     }
 }
 .main{
+    .bg-hoteldc{
+        background-color: rgb(187,187,187);
+    }
     .text-front-pages{
         text-shadow: -8px -3px 7px rgba(0,0,0,1);
         color: rgb(247, 247, 247);
@@ -256,10 +258,6 @@ body{
         }   
     }
 }
-
-    
-
-
 @media screen and (min-width:768px){
     .main{
         .border-contact{
