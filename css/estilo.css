@@ -14,8 +14,6 @@ body {
 }
 .header .link-hoteldc {
   color: rgb(247, 247, 247);
-  padding: 0;
-  margin-inline: 10px;
 }
 .header .link-hoteldc:hover {
   background-color: rgb(247, 247, 247);
@@ -26,17 +24,11 @@ body {
   background-color: rgb(187, 187, 187);
 }
 .main .title-hoteldc {
-  text-shadow: -5px -3px 0px rgb(147, 147, 147);
+  text-shadow: -2px -3px 0px rgb(147, 147, 147);
+  font-size: 2.5rem;
 }
 .main .subtitle-hoteldc {
-  font-size: 2rem;
-}
-.main .front-hoteldc {
-  height: 80vh;
-}
-.main .text-carousel {
-  font-size: 4rem;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-size: 2.5rem;
 }
 .main .reservation-button {
   background-color: rgb(41, 46, 49);
@@ -46,35 +38,18 @@ body {
   background-color: rgb(247, 247, 247);
   color: rgb(41, 46, 49);
 }
-.main .menu-hoteldc .card-menu-hoteldc {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+.main .stand-out {
+  color: rgb(38, 32, 66);
+  text-shadow: 0px 0px 5px grey;
 }
-.main .menu-hoteldc .image-menu {
-  height: 30vh;
-}
-.main .menu-link a {
-  text-decoration: none;
-  color: rgb(247, 247, 247);
-}
-.main .menu-link a:hover {
-  color: rgb(41, 46, 49);
-}
-.main .box-stay {
-  border-radius: 22px;
-  background: rgb(147, 147, 147);
-}
-.main .box-stay .image-box-stay {
-  width: 100%;
-  height: 30vh;
-  border-radius: 25px;
+.main .number {
+  font-family: Courier;
+  font-weight: bold;
+  font-style: oblique;
 }
 .main .card-opinions {
-  border-radius: 40px;
-  background: rgb(247, 247, 247);
   background: radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
-  background: -webkit-radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
-  background: -moz-radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
-  border: 1px solid grey;
+  border: 5px solid gray;
 }
 .main .opinions-button {
   font-size: 2rem;
@@ -85,7 +60,46 @@ body {
   background-color: rgb(187, 187, 187);
   color: rgb(41, 46, 49);
 }
+.main .menu-group .card-menu {
+  position: relative;
+  overflow: hidden;
+  border: 5px solid white;
+}
+.main .menu-group .card-menu .card-menu-text {
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -80%;
+  right: 0;
+  color: white;
+  background-color: rgba(31, 61, 71, 0.3529411765);
+  backdrop-filter: blur(3px);
+  transition: 3s;
+}
+.main .menu-group .card-menu .card-menu-text .menu-link a {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+}
+.main .menu-group .card-menu .card-menu-text .menu-link a:hover {
+  color: rgb(41, 46, 49);
+}
+.main .menu-group .card-menu:hover .card-menu-text {
+  bottom: 0;
+}
 
+@media screen and (min-width: 992px) {
+  .main .front-hoteldc {
+    height: 75vh;
+  }
+  .main .title-hoteldc {
+    text-shadow: -5px -3px 0px rgb(147, 147, 147);
+    font-size: 4rem;
+  }
+  .main .text-carousel {
+    font-size: 4rem;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  }
+}
 .main .text-front-pages {
   text-shadow: -8px -3px 7px rgb(0, 0, 0);
   color: rgb(247, 247, 247);
@@ -153,69 +167,4 @@ body {
 }
 .footer .bg-copy {
   background-color: black;
-}
-
-.main .border-contact {
-  border-radius: 30px 30px 30px 30px;
-  -webkit-border-radius: 30px 30px 30px 30px;
-  -moz-border-radius: 30px 30px 30px 30px;
-  background: rgb(187, 187, 187);
-}
-.main .border-contact .imput-contact {
-  display: block;
-  width: 80%;
-  padding: 0.35rem 1rem;
-  font-size: 1.3rem;
-  font-weight: 40;
-  background-color: rgba(1, 1, 62, 0.263);
-  color: #e9eaeb;
-  border: 3px solid grey;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.main .form-check-contact:focus {
-  border-color: #03193a;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 4, 10, 0.25);
-}
-.main .form-check-contact:checked {
-  background-color: #000000;
-  border-color: #3f4041;
-}
-.main .check-contact a {
-  color: rgb(41, 46, 49);
-  text-decoration: none;
-}
-.main .check-contact a:hover {
-  color: rgb(247, 247, 247);
-}
-
-@media screen and (min-width: 768px) {
-  .main .border-contact {
-    width: 40rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main .text-front-pages {
-    text-shadow: -8px -3px 7px rgb(0, 0, 0);
-    color: rgb(247, 247, 247);
-    font-size: 8rem;
-  }
-  .main .title-hoteldc {
-    text-shadow: -5px -3px 0px rgb(147, 147, 147);
-    font-size: 5rem;
-  }
-  .main .image-front-pages {
-    width: 100%;
-    height: 80vh;
-  }
-  .main .border-service {
-    margin: 50px;
-  }
-  .main .gallery {
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: 150px;
-    grid-template-areas: "img2  img2    img1    img1    img1    img3    img3" "img2  img2    img1    img1    img1    img3    img3" "img4  img4    img1    img1    img1    img5    img5" "img4  img4    img1    img1    img1    img5    img5" "img6  img6    img6    img7    img7    img8    img8" "img6  img6    img6    img7    img7    img8    img8" "img9  img9    img9    img10   img10   img10   img10" "img9  img9    img9    img10   img10   img10   img10";
-  }
 }/*# sourceMappingURL=estilo.css.map */

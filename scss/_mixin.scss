@@ -8,3 +8,8 @@
     gap: $espacio;
     grid-auto-rows: $filas;
 }
+@mixin fuente( $familia, $tipo ,$estilo){
+    font-family: $familia;
+    font-weight: $tipo ;
+    font-style: $estilo;
+}
