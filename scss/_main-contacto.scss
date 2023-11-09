@@ -1,6 +1,6 @@
 .main{
     .border-contact{
-        border-radius: map-get($map: bordes-radius, $key: 30 );
+        border-radius: map-get($map: $bordes-radius, $key: 30 );
         background: $color-alternativo;
         .imput-contact{
             display: block;
