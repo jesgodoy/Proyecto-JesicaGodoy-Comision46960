@@ -9,7 +9,9 @@
     .subtitle-hoteldc{
         font-size: map-get($map: $tamano-rem, $key: 2-5 );
     }
-
+    .front-hoteldc{
+        height: 40vh;
+    }
     .reservation-button{
         @include fondo-color($color-secundario, $color-principal);
         &:hover{
@@ -17,14 +19,14 @@
         }
     }
     .stand-out{
-        color: rgb(38, 32, 66);
+        color: $color-secundario;
         text-shadow: 0px 0px 5px grey;
     }
     .number{
         @include fuente(Courier, bold, oblique);
     }
     .card-opinions{
-        background: radial-gradient(circle farthest-side at top center, rgb(247,247,247) 0%, rgb(41,46,49) 180%);
+        background: radial-gradient(circle farthest-side at top center, $color-principal 0%, $color-secundario 180%);
         border: 5px solid gray;
     }
     
@@ -37,15 +39,10 @@
     } 
     .menu-group{
         .card-menu{
-            position: relative;
-            overflow: hidden;
-            border: 5px solid white;
+            border:  5px solid white;
+            cursor: $cursor-manito;
             .card-menu-text{
-                object-fit: cover;
-                border-radius: 15px;
-                position: absolute;
                 bottom: -80%;
-                right: 0;
                 color: white;
                 background-color: #1f3d475a;
                 backdrop-filter: blur(3px);

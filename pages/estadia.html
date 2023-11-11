@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Estadia | Hotel Divina Calma</title>
+    <meta name="description" content="Divina Calma es un Hotel que te permitirá vivir una experiencia única gracias a todas las posibilidades diferentes que te ofrecemos, opción inmejorable tanto para familias, amigos, parejas, o aquellas personas que necesiten un ligar para relajarse.">
+    <meta name="keywords" content="Divina Calma, Hotel, Resort, Caribe, Reservas, Todo Incluido, Estadia, Alojamiento, vaciones, ocio, relax, amigos, familia, pareja">
     <link rel="icon" href="../assets/imagenes/icono-hotel.png" type="image/icon">
 </head>
 <body>
@@ -44,9 +46,13 @@
     </header>
     <main class="main">
         <div class="card">
-            <img src="../assets/imagenes/estadia/portada-estadia.jpg" class="w-100 front-hoteldc" alt="portada-estadia">
+            <picture>
+                <source media="(max-width: 639px)" srcset="../assets/imagenes/estadia/portada-estadia-640.jpg">
+                <source media="(man-width: 640px)" srcset="../assets/imagenes/estadia/portada-estadia.jpg">
+                <img src="../assets/imagenes/estadia/portada-estadia.jpg" class="w-100 front-hoteldc" alt="portada-estadia">
+            </picture>
             <div class="card-img-overlay d-flex align-items-end">
-                <h1 class="card-title mb-2 text-front-pages">Estadia</h1>
+                <h1 class="card-title  mb-2 text-front-pages">Estadia</h1>
             </div>
         </div>
         <div class="bg-hoteldc py-3">
@@ -85,7 +91,7 @@
             </div>
         </div>
         <div class="container-fluid my-5">
-            <h1 class="text-center mb-3 title-hoteldc">Todo incluido</h1>
+            <h2 class="text-center mb-3 title-hoteldc">Todo incluido</h2>
             <div class="container">
                 <div class="row g-5 ">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3">
@@ -107,7 +113,7 @@
         </div>
 
         <div class="container-fluid my-5 bg-hoteldc pb-5 ">
-            <h1 class="text-center py-5 title-hoteldc">Actividades Exclusivos</h1>
+            <h2 class="text-center py-5 title-hoteldc">Actividades Exclusivos</h2>
             <div class="container">
                 <div class="row g-5">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
@@ -138,7 +144,7 @@
             <div class="col-sm-12 col-md-3 my-3 text-center">
                 <div class="d-flex justify-content-center mt-5">
                     <a href="../index.html">
-                        <img src="../assets/imagenes/icono-hotel.png" alt="icono-hotel">
+                        <img src="../assets/imagenes/logo.png" class="w-75" alt="logo-hotel">
                     </a>
                 </div>
             </div>
@@ -161,7 +167,7 @@
                     <li class="fs-4"><a href="#">Política de cancelación de reserva</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div class="col-sm-12 col-md-3 my-3 pe-3 text-center">
                 <h4 class="text-center">REDES SOCIALES</h4>
                     <ul class="text-start d-flex justify-content-center link-footer">
                         <li class="fs-4 p-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>

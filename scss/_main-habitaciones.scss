@@ -15,10 +15,4 @@
         background-color: $color-principal;
         
     }
-    .image-room{
-        border-radius: map-get($map: $bordes-radius, $key: 25 );
-    }
-    .box-room{
-        border-radius: map-get($map: $bordes-radius, $key: 25 );
-    }
 }

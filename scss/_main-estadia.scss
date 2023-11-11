@@ -15,10 +15,11 @@
 @media screen and (min-width:992px){
     .main{
         .text-front-pages{
-            text-shadow: -8px -3px 7px rgba(0,0,0,1);
-            color: $color-principal;
             font-size: map-get($map: $tamano-rem, $key: 6);
+            margin-left: 2rem;
         }
+
     }
     
 }
+

@@ -6,12 +6,12 @@
             color: $color-principal;
             text-decoration: map-get($map: $estilo, $key: ninguno );
             &:hover{
-                color: map-get($map: $colores-varios, $key: gris );
+                color: gray;
             }
         }   
     }
     .bg-copy{
-        background-color: map-get($map: $colores-varios, $key: negro );;
+        background-color: black;
     }
 }
 

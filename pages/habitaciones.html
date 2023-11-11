@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Habitaciones | Hotel Divina Calma</title>
+    <meta name="description" content="Nuestro Hotel cuenta con Amplias y cómodas Habitaciones, cuentan con todos los servicios disponibles para hacer de tu estadía la mejor. Nuestro hotel cuenta con mas de 200 habitaciones y también habitaciones familiares disponible.">
+    <meta name="keywords" content="Divina Calma, Hotel, Resort, Caribe, Reservas, Todo Incluido, Alojaminto, Comodidad, Descanso, Estandar, Lujo, Vip, Amplio, Hidromasaje, wifi, TV, frigo-bar ">
     <link rel="icon" href="../assets/imagenes/icono-hotel.png" type="image/icon">
 </head>
 <body>
@@ -44,9 +46,13 @@
     </header>
     <main class="main">
         <div class="card">
-            <img src="../assets/imagenes/habitaciones/portada-habitaciones.jpg" class="w-100 front-hoteldc" alt="habitacion-portada">
+            <picture>
+                <source media="(max-width: 639px)" srcset="../assets/imagenes/habitaciones/portada-habitaciones-640.jpg">
+                <source media="(man-width: 640px)" srcset="../assets/imagenes/habitaciones/portada-habitaciones.jpg">
+                <img src="../assets/imagenes/habitaciones/portada-habitaciones.jpg" class="w-100 front-hoteldc" alt="habitacion-portada">
+            </picture>
             <div class="card-img-overlay d-flex align-items-end">
-                <h1 class="card-title ms-5 mb-2 text-front-pages">Habitaciones</h1>
+                <h1 class="card-title mb-2 text-front-pages">Habitaciones</h1>
             </div>
         </div>
         <div class="bg-hoteldc py-3">
@@ -254,7 +260,7 @@
             <div class="col-sm-12 col-md-3 my-3 text-center">
                 <div class="d-flex justify-content-center mt-5">
                     <a href="../index.html">
-                        <img src="../assets/imagenes/logo-hotel.png" alt="logo-hotel">
+                        <img src="../assets/imagenes/logo.png" class="w-75" alt="logo-hotel">
                     </a>
                 </div>
             </div>
@@ -277,7 +283,7 @@
                     <li class="fs-4"><a href="#">Política de cancelación de reserva</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div class="col-sm-12 col-md-3 my-3 pe-3 text-center">
                 <h4 class="text-center">REDES SOCIALES</h4>
                     <ul class="text-start d-flex justify-content-center link-footer">
                         <li class="fs-4 p-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>

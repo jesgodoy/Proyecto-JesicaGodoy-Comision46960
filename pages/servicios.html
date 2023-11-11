@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Servicios | Hotel Divina Calma</title>
+    <meta name="description" content="El Hotel dulce calma ofreces los mejores y más completos servicios, además de contar con diferentes áreas de recreaciones. El hotel cuenta con gimnasio, spa, diferentes piscinas, sala de estar un salón del té, sala de juegos para niños y jóvenes y un bar. No te pierdas la oportunidad y serva ahora.">
+    <meta name="keywords" content="Divina Calma, Hotel, Resort, Hotel Caribe, Spa, Sala de juegos, Piscina, Piscina para niños, Bar, Gimnacio, ">
     <link rel="icon" href="../assets/imagenes/icono-hotel.png" type="image/icon">
 </head>
 <body>
@@ -44,7 +46,11 @@
     </header>
     <main class="main">
         <div class="card">
-            <img src="../assets/imagenes/servicios/portada-servicios.jpg" class="w-100 front-hoteldc" alt="servicio-limpieza">
+            <picture>
+                <source media="(max-width: 639px)" srcset="../assets/imagenes/servicios/portada-servicios.jpg">
+                <source media="(man-width: 640px)" srcset="../assets/imagenes/servicios/portada-servicios.jpg">
+                <img src="../assets/imagenes/servicios/portada-servicios.jpg" class="w-100 front-hoteldc" alt="servicio-limpieza">
+            </picture>
             <div class="card-img-overlay d-flex align-items-end">
                 <h1 class="card-title mb-2 text-front-pages">Servicios e Instalaciones</h1>
             </div>
@@ -89,7 +95,7 @@
                 <div class="row d-flex justify-content-lg-center">
                     <h2>Conoce mas acerca de todos los servicios, instalaciaones y distintas areas de las que podras disfustrar</h2>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 border-service mt-5">
-                        <h1 class="text-center pt-3">Servicios<br>Todo Incluido</h1>
+                        <h2 class="text-center pt-3">Servicios<br>Todo Incluido</h2>
                         <ul class="fs-4 mx-2">
                             <li>Recepción y atención las 24 hs</li>
                             <li>Traslados desde/hacia al aeropuerto</li>
@@ -112,7 +118,7 @@
                         </ul>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 border-service mt-5">
-                        <h1 class="text-center py-3">Instalaciones</h1>
+                        <h2 class="text-center py-3">Instalaciones</h2>
                         <ul class="fs-4 mx-2">
                             <li>Amplia recepción</li>                                        
                             <li>Habitaciones con baño privado</li>
@@ -138,50 +144,76 @@
                 </div>  
             </div>
         </div>
-        <div class="container-fluid my-5">
+        <div class="container my-5">
             <h2 class="title-hoteldc">Galeria </h2>
             <p class="fs-2 mx-4">Conocé  mas el Hotel Dulce Calma atravez de nuestra galería de imágenes, en la cual descubrirás instalaciones, servicios y entorno del hotel.
             </p>
-            <div class=" mt-3 gallery p-3 bg-hoteldc">
-                <div class=" image-gallery-1">
-                    <img src="../assets/imagenes/servicios/piscina (1).jpg" class="img-fluid image-gallery" alt="hotel-piscina">
-                </div>
-                <div class=" image-gallery-2">
-                    <img src="../assets/imagenes/servicios/comedor (1).jpg" class="image-gallery" alt="comedor">
-                </div>
-                <div class=" image-gallery-3">
-                    <img src="../assets/imagenes/hotel/sala-de-te.jpg" class="image-gallery" alt="sala-de-te">
-                </div>
-                <div class=" image-gallery-4">
-                    <img src="../assets/imagenes/hotel/sala-estar.jpg" class="image-gallery" alt="sala-estar">
-                </div>
-                <div class=" image-gallery-5">
-                    <img src="../assets/imagenes/habitaciones/lujo-doble-portada.jpg" class="image-gallery" alt="habitacion">
-                </div>
-                <div class="image-gallery-6">
-                    <img src="../assets/imagenes/hotel/servicio-habitacion.jpg" class="image-gallery" alt="piscina2">
-                </div>
-                <div class=" image-gallery-7">
-                    <img src="../assets/imagenes/hotel/spa-sauna.jpg" class="image-gallery" alt="spa-sauna">
-                </div>
-                <div class=" image-gallery-8">
-                    <img src="../assets/imagenes/estadia/gimnacio.jpg" class="image-gallery" alt="gimnacio">
-                </div>
-                <div class=" image-gallery-9">
-                    <img src="../assets/imagenes/hotel/servicio-limpieza.jpg" class="image-gallery" alt="servicio-limpieza">
-                </div>
-                <div class=" image-gallery-10">
-                    <img src="../assets/imagenes/servicios/bar (2).jpg" class="image-gallery" alt="bar">
+            <div class="container">
+                <div class=" mt-3 gallery p-3 rounded-4 ">
+                    <div class="position-relative card-galery image-gallery-1">
+                        <img src="../assets/imagenes/servicios/bar.jpg" class="image-gallery rounded-4" alt="bar">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Bar</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-2">
+                        <img src="../assets/imagenes/servicios/comedor.jpg" class="image-gallery rounded-4" alt="comedor">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Comedor</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-3">
+                        <img src="../assets/imagenes/servicios/spa-4.jpg" class="image-gallery rounded-4" alt="spa">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Spa</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-4">
+                        <img src="../assets/imagenes/servicios/piscina1.jpg" class="image-gallery rounded-4" alt="Piscina">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Piscina</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-5">
+                        <img src="../assets/imagenes/servicios/sala-de-te.jpg" class="image-gallery rounded-4" alt="sala-de-te">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Salón del Te</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-6">
+                        <img src="../assets/imagenes/servicios/comida2.jpg" class="image-gallery rounded-4" alt="gatronomia">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Gastronomia</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-7">
+                        <img src="../assets/imagenes/servicios/servicio-habitacion.jpg" class="image-gallery rounded-4" alt="servicio-habitacion">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">servicio a la habitacion</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-8">
+                        <img src="../assets/imagenes/servicios/spa-sauna.jpg" class="image-gallery rounded-4" alt="sauna">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="text-center subtitle-hoteldc">Sauna</h3>
+                        </div>
+                    </div>
+                    <div class="position-relative card-galery image-gallery-9">
+                        <img src="../assets/imagenes/servicios/sala-estar.jpg" class="image-gallery rounded-4" alt="sala-estar">
+                        <div class="rounded-4 position-absolute top-0 start-0 bottom-0 end-0 d-flex align-items-center justify-content-center text-galery">
+                            <h3 class="subtitle-hoteldc">Sala</h3>
+                        </div>
+                    </div>  
                 </div>
             </div>
-        </div>    
+        </div>  
     </main>
     <footer class="footer container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-3 my-3 text-center">
                 <div class="d-flex justify-content-center mt-5">
                     <a href="../index.html">
-                        <img src="../assets/imagenes/icono-hotel.png" alt="icono-hotel">
+                        <img src="../assets/imagenes/logo.png" class="w-75" alt="logo-hotel">
                     </a>
                 </div>
             </div>
@@ -204,7 +236,7 @@
                     <li class="fs-4"><a href="#">Política de cancelación de reserva</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div class="col-sm-12 col-md-3 my-3 pe-3 text-center">
                 <h4 class="text-center">REDES SOCIALES</h4>
                     <ul class="text-start d-flex justify-content-center link-footer">
                         <li class="fs-4 p-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>
