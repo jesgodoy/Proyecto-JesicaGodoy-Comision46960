@@ -6,6 +6,9 @@
         -moz-box-shadow: -2px -10px 16px 8px rgba(0,0,0,0.54);
     }
     .gallery{
+        background: $color-secundario;
+        border: 3px solid grey;
+        background: radial-gradient(circle farthest-corner at center center, $color-secundario 0%, $color-principal 100%, $color-alternativo 50%);
         @include grid( 2, 20px, 300px);
         grid-template-areas:    'img1 img1'
                                 'img2 img3'
@@ -16,7 +19,7 @@
         .card-galery{
             cursor: $cursor-manito;
             .text-galery{
-                @include fondo-color(rgba(41, 46, 49, 0.288), $color-principal);
+                @include fondo-color(rgba(7, 35, 52, 0.589), $color-principal);
                 transform: scaleX(0);
                 transition: map-get($map: $transicion, $key: 1 );
             }
