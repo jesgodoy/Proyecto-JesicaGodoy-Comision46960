@@ -130,6 +130,14 @@ body {
 .main .bg-room-light {
   background-color: rgb(247, 247, 247);
 }
+.main .image-room {
+  cursor: pointer;
+  transition: 1s;
+}
+.main .image-room:hover {
+  transform: scale(1.2);
+  transition: 4s;
+}
 
 .main .border-service {
   width: 500px;

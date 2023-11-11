@@ -15,4 +15,12 @@
         background-color: $color-principal;
         
     }
+    .image-room{
+        cursor: $cursor-manito;
+        transition: map-get($map: $transicion, $key: 1 );
+        &:hover{
+            transform: scale(1.2);
+            transition: map-get($map: $transicion, $key: 4 );
+        }
+    }
 }
