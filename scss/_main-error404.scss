@@ -6,7 +6,7 @@
         background: url(../assets/imagenes/hotel/ascensor.png);
         position: absolute;
         top: 2%;
-        left: 10%;
+        left: 15%;
         animation: abrir 4s steps(3) infinite;
         }
 
@@ -20,12 +20,8 @@
     }
     .button-back a{
         text-decoration: map-get($map: $estilo, $key: ninguno );
-                    color: $color-alternativo;
-                    &:hover{
-                        color: $color-secundario;
-                        transition: none;
-                    } 
-    }                   
+        @include fondo-color($color-secundario, $color-principal);
+        }                   
 }
 @media screen and (min-width:992px){
     .main{

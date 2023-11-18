@@ -247,7 +247,7 @@ body {
   background: url(../assets/imagenes/hotel/ascensor.png);
   position: absolute;
   top: 2%;
-  left: 10%;
+  left: 15%;
   animation: abrir 4s steps(3) infinite;
 }
 @keyframes abrir {
@@ -260,11 +260,8 @@ body {
 }
 .main .button-back a {
   text-decoration: none;
-  color: rgb(187, 187, 187);
-}
-.main .button-back a:hover {
-  color: rgb(41, 46, 49);
-  transition: none;
+  background-color: rgb(41, 46, 49);
+  color: rgb(247, 247, 247);
 }
 
 @media screen and (min-width: 992px) {
