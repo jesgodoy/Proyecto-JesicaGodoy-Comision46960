@@ -50,19 +50,6 @@ body {
   font-weight: bold;
   font-style: oblique;
 }
-.main .card-opinions {
-  background: radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
-  border: 5px solid gray;
-}
-.main .opinions-button {
-  font-size: 2rem;
-  background-color: rgb(41, 46, 49);
-  color: rgb(247, 247, 247);
-}
-.main .opinions-button:hover {
-  background-color: rgb(187, 187, 187);
-  color: rgb(41, 46, 49);
-}
 .main .menu-group .card-menu {
   border: 5px solid white;
   cursor: pointer;
@@ -72,7 +59,7 @@ body {
   color: white;
   background-color: rgba(31, 61, 71, 0.3529411765);
   backdrop-filter: blur(3px);
-  transition: 3s;
+  transition: 2s;
 }
 .main .menu-group .card-menu .card-menu-text .menu-link a {
   text-decoration: none;
@@ -80,9 +67,14 @@ body {
 }
 .main .menu-group .card-menu .card-menu-text .menu-link a:hover {
   color: rgb(41, 46, 49);
+  transition: none;
 }
 .main .menu-group .card-menu:hover .card-menu-text {
   bottom: 0;
+}
+.main .card-opinions {
+  background: radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
+  border: 3px solid gray;
 }
 
 @media screen and (min-width: 992px) {
@@ -124,7 +116,7 @@ body {
 }
 .main .bg-room, .main .bg-room-light {
   border-radius: 40px;
-  border: 4px dashed grey;
+  border: 2px solid rgb(41, 46, 49);
   background: rgb(187, 187, 187);
 }
 .main .bg-room-light {
@@ -151,9 +143,9 @@ body {
   background: radial-gradient(circle farthest-corner at center center, rgb(41, 46, 49) 0%, rgb(247, 247, 247) 100%, rgb(187, 187, 187) 50%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  grid-auto-rows: 300px;
-  grid-template-areas: "img1 img1" "img2 img3" "img4 img4" "img5 img7" "img6 img6" "img8 img9";
+  gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas: "img2 img2" "img1 img3" "img4 img4" "img5 img7" "img8 img8" "img6 img9";
 }
 .main .gallery .card-galery {
   cursor: pointer;
@@ -206,10 +198,10 @@ body {
   }
   .main .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-auto-rows: 200px;
-    grid-template-areas: "img2  img2    img1    img3" "img5  img6    img4    img4" "img7  img7    img8    img9";
+    grid-auto-rows: 250px;
+    grid-template-areas: "img2  img2    img1    img3" "img5  img6    img4    img4" "img8  img8     img7    img9";
   }
 }
 .main .border-contact {
@@ -247,6 +239,40 @@ body {
 @media screen and (min-width: 768px) {
   .main .border-contact {
     width: 40rem;
+  }
+}
+.main .image-error {
+  width: 286px;
+  height: 335px;
+  background: url(../assets/imagenes/hotel/ascensor.png);
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  animation: abrir 4s steps(3) infinite;
+}
+@keyframes abrir {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -858px;
+  }
+}
+.main .button-back a {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+}
+.main .button-back a:hover {
+  color: rgb(41, 46, 49);
+  transition: none;
+}
+
+@media screen and (min-width: 992px) {
+  .main .image-error {
+    left: 45%;
+  }
+  .main .text-error {
+    margin-top: 150px;
   }
 }
 .footer {

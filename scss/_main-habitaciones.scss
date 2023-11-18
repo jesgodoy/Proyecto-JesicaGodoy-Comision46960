@@ -7,7 +7,7 @@
     }
     .bg-room{
         border-radius: map-get($map: $bordes-radius, $key: 40 );
-        border: 4px dashed grey;
+        border: 2px solid $color-secundario;
         background: $color-alternativo;
     }
     .bg-room-light{

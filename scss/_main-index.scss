@@ -25,18 +25,6 @@
     .number{
         @include fuente(Courier, bold, oblique);
     }
-    .card-opinions{
-        background: radial-gradient(circle farthest-side at top center, $color-principal 0%, $color-secundario 180%);
-        border: 5px solid gray;
-    }
-    
-    .opinions-button{
-        font-size: map-get($map: $tamano-rem, $key: 2 );
-        @include fondo-color($color-secundario, $color-principal);
-        &:hover{
-            @include fondo-color($color-alternativo, $color-secundario);
-        }
-    } 
     .menu-group{
         .card-menu{
             border:  5px solid white;
@@ -46,12 +34,13 @@
                 color: white;
                 background-color: #1f3d475a;
                 backdrop-filter: blur(3px);
-                transition: map-get($map: $transicion, $key: 3 );
+                transition: map-get($map: $transicion, $key: 2 );
                 .menu-link a{
                     text-decoration: map-get($map: $estilo, $key: ninguno );
                     color: $color-alternativo;
                     &:hover{
                         color: $color-secundario;
+                        transition: none;
                     } 
                 }
             }
@@ -62,7 +51,13 @@
             }
         }
     }
+    .card-opinions{
+        background: radial-gradient(circle farthest-side at top center, $color-principal 0%, $color-secundario 180%);
+        border: 3px solid gray;
+    }
+    
 }
+
 
 @media screen and (min-width:992px){
     .main{

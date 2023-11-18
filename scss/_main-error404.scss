@@ -1,0 +1,39 @@
+.main{
+    
+    .image-error{
+        width: 286px;
+        height: 335px;
+        background: url(../assets/imagenes/hotel/ascensor.png);
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        animation: abrir 4s steps(3) infinite;
+        }
+
+    @keyframes abrir {
+        0%{
+            background-position: 0px;
+        }
+        100%{
+            background-position: -858px;
+        }
+    }
+    .button-back a{
+        text-decoration: map-get($map: $estilo, $key: ninguno );
+                    color: $color-alternativo;
+                    &:hover{
+                        color: $color-secundario;
+                        transition: none;
+                    } 
+    }                   
+}
+@media screen and (min-width:992px){
+    .main{
+        .image-error{
+            left: 45%;
+        }
+    .text-error {
+        margin-top: 150px;
+    }
+    }
+}

@@ -9,13 +9,13 @@
         background: $color-secundario;
         border: 3px solid grey;
         background: radial-gradient(circle farthest-corner at center center, $color-secundario 0%, $color-principal 100%, $color-alternativo 50%);
-        @include grid( 2, 20px, 300px);
-        grid-template-areas:    'img1 img1'
-                                'img2 img3'
+        @include grid( 2, 10px, 200px);
+        grid-template-areas:    'img2 img2'
+                                'img1 img3'
                                 'img4 img4'
                                 'img5 img7'
-                                'img6 img6'
-                                'img8 img9';
+                                'img8 img8'
+                                'img6 img9';
         .card-galery{
             cursor: $cursor-manito;
             .text-galery{
@@ -70,10 +70,10 @@
             margin: 50px;
         }
         .gallery{
-            @include grid( 4, 20px, 200px);
+            @include grid( 3, 20px, 250px);
             grid-template-areas: "img2  img2    img1    img3"
                                  "img5  img6    img4    img4"
-                                 "img7  img7    img8    img9"
+                                 "img8  img8     img7    img9"
                                  ;
         }
         
