@@ -33,6 +33,15 @@ body {
 .main .front-hoteldc {
   height: 40vh;
 }
+.main .form-w {
+  width: 20%;
+}
+.main .hola {
+  width: 25%;
+}
+.main .form-reservation:focus {
+  box-shadow: 0 0 0 0.2rem rgba(20, 20, 21, 0.25);
+}
 .main .reservation-button {
   background-color: rgb(41, 46, 49);
   color: rgb(247, 247, 247);
@@ -63,7 +72,7 @@ body {
 }
 .main .menu-group .card-menu .card-menu-text .menu-link a {
   text-decoration: none;
-  color: rgb(187, 187, 187);
+  color: rgb(247, 247, 247);
 }
 .main .menu-group .card-menu .card-menu-text .menu-link a:hover {
   color: rgb(41, 46, 49);
@@ -88,6 +97,9 @@ body {
   .main .text-carousel {
     font-size: 4rem;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  }
+  .main .form-w {
+    width: 75%;
   }
 }
 .main .text-front-pages {

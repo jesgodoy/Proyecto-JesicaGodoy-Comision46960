@@ -12,6 +12,15 @@
     .front-hoteldc{
         height: 40vh;
     }
+    .form-w{
+        width: 20%;
+    }
+    .hola{
+        width: 25%;
+    }
+    .form-reservation:focus{
+        box-shadow: 0 0 0 0.20rem rgba(20, 20, 21, 0.25);
+    }
     .reservation-button{
         @include fondo-color($color-secundario, $color-principal);
         &:hover{
@@ -37,7 +46,7 @@
                 transition: map-get($map: $transicion, $key: 2 );
                 .menu-link a{
                     text-decoration: map-get($map: $estilo, $key: ninguno );
-                    color: $color-alternativo;
+                    color: $color-principal;
                     &:hover{
                         color: $color-secundario;
                         transition: none;
@@ -57,7 +66,11 @@
     }
     
 }
-
+@media screen and (min-width:640px) {
+    .card-opinions{ 
+        height: auto;
+    }
+}
 
 @media screen and (min-width:992px){
     .main{
@@ -72,5 +85,9 @@
             font-size: map-get($map: $tamano-rem, $key: 4 );
             text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
         }
+        .form-w{
+            width: 75%;
+        }
+        
     }
 }
