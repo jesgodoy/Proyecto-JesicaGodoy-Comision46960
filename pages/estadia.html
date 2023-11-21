@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <title>Estadia | Hotel Divina Calma</title>
     <meta name="description" content="Divina Calma es un Hotel que te permitirá vivir una experiencia única gracias a todas las posibilidades diferentes que te ofrecemos, opción inmejorable tanto para familias, amigos, parejas, o aquellas personas que necesiten un ligar para relajarse.">
     <meta name="keywords" content="Divina Calma, Hotel, Resort, Caribe, Reservas, Todo Incluido, Estadia, Alojamiento, vaciones, ocio, relax, amigos, familia, pareja">
@@ -17,26 +18,26 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="../index.html">
-                <img src="../assets/imagenes/logo.png" class="w-50" alt=" imagen/logo">
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" src="../assets/imagenes/logo.png" class="w-50" alt=" logo del hotel">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars fa-xl" style="color: #f7f7f7;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 justify-content-end me-4">
-                        <li class="nav-item text-center fs-3 ">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3 ">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
-                            <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="estadia.html">Estadia</a>
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
+                            <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="estadia.html">Estadía</a>
                         </li>
-                            <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="habitaciones.html">Habitaciones</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -49,43 +50,42 @@
             <picture>
                 <source media="(max-width: 639px)" srcset="../assets/imagenes/estadia/portada-estadia-640.jpg">
                 <source media="(man-width: 640px)" srcset="../assets/imagenes/estadia/portada-estadia.jpg">
-                <img src="../assets/imagenes/estadia/portada-estadia.jpg" class="w-100 front-hoteldc" alt="portada-estadia">
+                <img src="../assets/imagenes/estadia/portada-estadia.jpg" class="w-100 front-hoteldc" alt="vista nocturna de la piscina del hotel">
             </picture>
             <div class="card-img-overlay d-flex align-items-end">
-                <h1 class="card-title  mb-2 text-front-pages">Estadia</h1>
+                <h1 class="card-title  mb-2 text-front-pages">Estadía</h1>
             </div>
         </div>
         <div class="bg-hoteldc py-3">
-            <div class="container d-flex justify-content-center ">
-                <form class="row text-center">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label for="ingreso" >Fecha de Ingreso</label>
+            <div  class="container d-flex justify-content-center  ">
+                <form action="error404.html" class="row text-center">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <label for="validationDefault01" >Fecha de Ingreso</label>
                         <div class="d-flex justify-content-center">
-                            <input type="date" class="form-control w-auto text-center px-2" id="ingreso" name="ingreso">
+                            <input type="date" class="form-control w-auto text-center form-reservation" id="validationDefault01" name="ingreso" required>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label for="salida" >Fecha de Salida</label>
+                        <label for="validationDefault02">Fecha de Salida</label>
                         <div class="d-flex justify-content-center">
-                            <input type="date" class="form-control w-auto text-center px-2 " id="salida" name="salida">
+                            <input type="date" class="form-control w-auto text-center form-reservation hola" id="validationDefault01" name="salida" required>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <label for="persona">Personas</label>
-                        <div class="d-flex justify-content-center">
-                                <input type="number" class="form-control w-50 text-center mx-2" id="persona" name="persona" placeholder="adultos">
-                                <input type="number" class="form-control w-50 text-center mx-2" id="persona" name="persona" placeholder="niños">
-                        </div>
-                        
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-2">
-                        <label for="habitacion">Habitaciones</label>
-                        <div class="d-flex justify-content-center">
-                            <input type="number" class="form-control w-50 text-center hola" id="habitacion" name="habitacion" placeholder="Cant.">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 m-auto">
+                        <label for="validationDefault03">Personas</label>
+                        <div class="d-flex justify-content-center ">
+                            <input type="number" class="form-control  text-center mx-2 form-reservation form-w" id="validationDefault03" name="persona" placeholder="adultos" required>
+                            <input type="number" class="form-control text-center mx-2 form-reservation form-w" id="validationDefault03" name="persona" placeholder="niños" required>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-1 d-flex justify-content-center mt-2">
-                        <button type="button" class="btn reservation-button">Reservar</button>
+                    <div class=" col-12 col-sm-12 col-md-6 col-lg-2">
+                        <label for="validationDefault04">Habitaciones</label>
+                        <div class="d-flex justify-content-center m-auto">
+                            <input type="number" class="form-control text-center form-reservation form-w" id="validationDefault03" name="habitacion" placeholder="Cant.">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1 d-flex justify-content-center mt-2">
+                        <button class="btn reservation-button" >Reservar</button>
                     </div>
                 </form>
             </div>
@@ -94,18 +94,18 @@
             <h2 class="text-center mb-3 title-hoteldc">Todo incluido</h2>
             <div class="container">
                 <div class="row g-5 ">
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3">
-                        <p class="fs-3">Divina Calma es un hotel que te brindra una estadia con todo incluido, asi que no tendras que preocuparte por gastos adiciones.</p>
-                        <p class="fs-3 ">Solo preparate para divertirte, relajarte y disfrutar  unas maravillosas vacaciones con tu familia, amigos, en pareja o solo</p>
+                    <div data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3">
+                        <p class="fs-3">Divina Calma es un hotel que te brindar una estadía con todo incluido, así que no tendrás que preocuparte por gastos adiciones.</p>
+                        <p class="fs-3 ">Solo prepárate para divertirte, relajarte y disfrutar unas maravillosas vacaciones con tu familia, amigos, en pareja o solo.</p>
                     </div>
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center py-3 image-stay rounded-4">
+                    <div data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="col-12 col-lg-6 d-flex flex-column justify-content-center py-3 image-stay rounded-4">
                         <div class="row g-3">
-                            <img src="../assets/imagenes/estadia/familia.jpg" class="w-50 rounded-4" alt="famila">
-                            <img src="../assets/imagenes/estadia/pareja.jpg" class="w-50 rounded-4" alt="pareja">
+                            <img src="../assets/imagenes/estadia/familia.jpg" class="w-50 rounded-4" alt="mamilia en la piscina">
+                            <img src="../assets/imagenes/estadia/pareja.jpg" class="w-50 rounded-4" alt="pareja mirando el ateardecer">
                         </div>  
                         <div class="row g-3 mt-2">
-                            <img src="../assets/imagenes/estadia/sola.jpg" class="w-50 rounded-4" alt="sola">
-                            <img src="../assets/imagenes/estadia/amigos.jpg" class="w-50 rounded-4" alt="amigos">
+                            <img src="../assets/imagenes/estadia/sola.jpg" class="w-50 rounded-4" alt="mujer recibiendo masajes en el spa">
+                            <img src="../assets/imagenes/estadia/amigos.jpg" class="w-50 rounded-4" alt="amigos brindando">
                         </div>     
                     </div>
                 </div>
@@ -116,21 +116,21 @@
             <h2 class="text-center py-5 title-hoteldc">Actividades Exclusivos</h2>
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <div data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <div class="p-4 image-stay-light rounded-4">
                             <div class="row g-2">
-                                <img src="../assets/imagenes/estadia/juego-playa.jpg" class="w-50 rounded-4" alt="juego-playa">
-                                <img src="../assets/imagenes/estadia/fiesta.jpg" class="w-50 rounded-4" alt="fiesta">
+                                <img src="../assets/imagenes/estadia/juego-playa.jpg" class="w-50 rounded-4" alt="familia juagando en la playa">
+                                <img src="../assets/imagenes/estadia/fiesta.jpg" class="w-50 rounded-4" alt="amigos tomando tragos en el bar">
                             </div>  
                             <div class="row g-2 mt-2">
-                                <img src="../assets/imagenes/estadia/gimnacio.jpg" class="w-50 rounded-4" alt="gimnacio"> 
-                                <img src="../assets/imagenes/estadia/piscina-ninos.jpg" class="w-50 rounded-4" alt="piscina-ninos">
+                                <img src="../assets/imagenes/estadia/gimnacio.jpg" class="w-50 rounded-4" alt="persona en el gimnacio"> 
+                                <img src="../assets/imagenes/estadia/piscina-ninos.jpg" class="w-50 rounded-4" alt="niños jugando en la picsina">
                             </div>     
                         </div>
                         
                     </div>
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3">
-                        <p class="fs-3">Los niños y adolescentes que pueden disfrutar el área de juegos donde encontraran todo para divertirse. Además los más pequeños cuentan con una piscina exclusiva.</p>
+                    <div data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="col-12 col-lg-6 d-flex flex-column justify-content-center px-3">
+                        <p class="fs-3">Los niños y adolescentes que pueden disfrutar el área de juegos donde encontraran todo para divertirse. Además, los más pequeños cuentan con una piscina exclusiva.</p>
                         <p class="fs-3 ">Para adultos ofrecemos noche con música y baile. También podrá disfrutar de cocteles y bebidas variadas en el bar.</p>
                         <p class="fs-3" >Para los que buscan relajarse contamos con nuestro propio spa, en el cual podrán recibir diferentes tratamientos o usar el sauna.</p>
                         <p class="fs-3" >Y para aquellas personas que le gusta ejercitarse contamos con un gimnasio y entrenadores que arman rutinas diarias.</p>
@@ -144,11 +144,11 @@
             <div class="col-sm-12 col-md-3 my-3 text-center">
                 <div class="d-flex justify-content-center mt-5">
                     <a href="../index.html">
-                        <img src="../assets/imagenes/logo.png" class="w-75" alt="logo-hotel">
+                        <img src="../assets/imagenes/logo.png"  data-aos="flip-left" data-aos-duration="3000" data-aos-once="true" class="w-75" alt="logo del hotel">
                     </a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 text-center">
                 <h4 class="text-center">ACERCA DE HOTEL DULCE CALMA</h4>
                 <ul class="text-start link-footer">
                     <li class="fs-4"><a href="error404.html">Quienes somos</a></li>
@@ -156,7 +156,7 @@
                     <li class="fs-4"><a href="error404.html">Trabaja con nosotros</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 text-center">
                 <h4 class="text-center">RESERVA CON CONFIANZA</h4>
                     <ul class="text-start link-footer">
                     <li class="fs-4"><a href="error404.html">¿Cómo hacer una reserva?</a></li>
@@ -167,10 +167,10 @@
                     <li class="fs-4"><a href="error404.html">Política de cancelación de reserva</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 pe-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 pe-3 text-center ">
                 <h4 class="text-center">REDES SOCIALES</h4>
                     <ul class="text-start d-flex justify-content-center link-footer">
-                        <li class="fs-4 p-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>
+                        <li class="fs-4 p-3"><a  href="https://www.facebook.com/" target="_blank"><i" data-aos-duration="3000" class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>
                         <li class="fs-4 p-3"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl px-2"></i></a></li>
                         <li class="fs-4 p-3"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl px-2"></i></a></li>
                 </ul>
@@ -181,5 +181,9 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

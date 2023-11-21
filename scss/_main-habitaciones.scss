@@ -1,6 +1,6 @@
 .main{
     .list-room{
-        padding-left: map-get($map: $tamano-rem, $key: 10 );
+        padding-left: map-get($map: $tamano-rem, $key: 6 );
         & li{
             list-style: map-get($map: $estilo, $key: cuadrado );
         }
@@ -21,6 +21,13 @@
         &:hover{
             transform: scale(1.2);
             transition: map-get($map: $transicion, $key: 4 );
+        }
+    }
+}
+@media screen and (min-width:992px){
+    .main{
+        .list-room{
+            padding-left: map-get($map: $tamano-rem, $key: 10 );
         }
     }
 }

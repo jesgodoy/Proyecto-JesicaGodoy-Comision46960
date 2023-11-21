@@ -63,13 +63,11 @@
     .card-opinions{
         background: radial-gradient(circle farthest-side at top center, $color-principal 0%, $color-secundario 180%);
         border: 3px solid gray;
+        .opinion{
+            font-size: 1rem;
+        }
     }
     
-}
-@media screen and (min-width:640px) {
-    .card-opinions{ 
-        height: auto;
-    }
 }
 
 @media screen and (min-width:992px){
@@ -88,6 +86,12 @@
         .form-w{
             width: 75%;
         }
+        .card-opinions{
+            .opinion{
+                font-size: 1.7rem;
+            }
+        }
+        
         
     }
 }

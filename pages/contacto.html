@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <title>Contactos |Hotel Divina Calma</title>
     <meta name="description" content="Contactate con Nuestro hotel atravez de mensaje o personalmente en nuestro hotel. Podras hacer reservaciones o consultas de todos tipo, nuestros personal se encuentra apliamente capacitado para resolver cuelquier duda.">
     <meta name="keywords" content="Divina Calma, Hotel, Resort, Caribe, Reservas, Todo Incluido, Alojamiento, Contacto, Opiniones, Consulta, Resepcion, Ubicación">
@@ -17,26 +18,26 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="../index.html">
-                <img src="../assets/imagenes/logo.png" class="w-50" alt=" imagen/logo">
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" src="../assets/imagenes/logo.png" class="w-50" alt=" imagen/logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars fa-xl" style="color: #f7f7f7;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 justify-content-end me-4">
-                        <li class="nav-item text-center fs-3 ">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3 ">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
-                            <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="estadia.html">Estadia</a>
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
+                            <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="estadia.html">Estadía</a>
                         </li>
-                            <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="habitaciones.html">Habitaciones</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item text-center fs-3">
+                        <li data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true" class="nav-item text-center fs-3">
                             <a class="nav-link py-1 px-2 ms-4 rounded-pill link-hoteldc" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -57,56 +58,58 @@
         </div>
         <div class="container">
             <div class="row mb-5">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex justify-content-center mt-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  mt-5">
                     <div class="container">
-                        <div class="card border-contact">
-                            <h2 class="card-title text-center title-hoteldc">Contactanos</h2>
+                        <div data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="card border-contact">
+                            <h2 class="card-title text-center title-hoteldc">Contáctanos</h2>
                             <div class="px-5">
-                                <h3>Tu Opinion es importante</h3>
-                                <h4>Dejanos tu consulta, opinion o sugerencia</h4>
+                                <h3>Tu Opinión es importante</h3>
+                                <h4>Déjanos tu consulta, opinión o sugerencia</h4>
                             </div>
-                            <form action="error404.html" class="my-3 needs-validation" novalidate">
-                                <div class="mb-3 ps-5">
-                                    <label for="validationCustom01" class="form-label ms-3 fs-4">Nombre Completo</label>
-                                    <input type="email" class="rounded-pill imput-contact ms-4" id="validationCustom01" placeholder="Nombre y apellido">
+                            <form action="error404.html" class="row my-3">
+                                <div class="my-2">
+                                    <label for="validationServer01" class="form-label ms-4 fs-4">Nombre</label>
+                                    <input type="text" class="rounded-pill ms-5 imput-contact" id="validationServer01" placeholder="Nombre y apellido"  required>
                                 </div>
-                                <div class="mb-3 ps-5">
-                                    <label for="telefono" class="form-label ms-3 fs-4">Teléfono</label>
-                                    <input type="email" class="rounded-pill imput-contact ps-4" id="telefono" placeholder="cod.pais + cod.area + telefono">
+                                <div class="my-2">
+                                    <label for="validationServer02" class="form-label ms-4 fs-4">Teléfono</label>
+                                    <input type="tel" class="rounded-pill ms-5 imput-contact" id="validationServer02" placeholder="cod.pais + numero de teléfono"  required>
                                 </div>
-                                <div class="mb-3 ps-5">
-                                    <label for="email" class="form-label ms-3 fs-4">Email</label>
-                                    <input type="email" class="rounded-pill imput-contact ps-4" id="email" placeholder="nombre@ejemplo.com">
+                                <div class="my-2">
+                                    <label for="validationServer03" class="form-label ms-4 fs-4">E-mail</label>
+                                    <input type="email" class="rounded-pill ms-5 imput-contact" id="validationServer03" placeholder="nombre@ejemplo.com" required>
                                 </div>
-                                <div class="mb-3 ps-5">
-                                    <label for="exampleFormControlTextarea1" class="form-label ms-3 fs-4">Mensaje</label>
-                                    <textarea class="imput-contact ms-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <div class="my-2">
+                                    <label for="validationServer03" class="form-label ms-4 fs-4">Mensaje</label>
+                                    <textarea class="rounded-4 ms-5 imput-contact" id="validationServer03" placeholder="Escribe aqui tu mensaje" required  rows="3"></textarea>
                                 </div>
-                                <div class="mb-3 ps-5 ">
-                                    <input type="checkbox" class="form-check-input form-check-contact ms-4 me-2" id="exampleCheck1">
-                                    <label class="form-check-label check-contact fs-5" for="exampleCheck1">
-                                        <a href="error404.html">Terminos y Condiciones </a>
-                                        <span>/</span>
-                                        <a href="error404.html">Politica de Privacidad</a>
+                                <div class="d-flex my-3">
+                                    <input class="form-check-input is-invalid fs-5 form-check-contact ms-4" type="checkbox" value="" id="invalidCheck3"  required>
+                                    <label class="form-check-label check-contact ms-3 fs-5" for="exampleCheck1">
+                                        <a href="error404.html">Términos y Condicionenes </a>
+                                        <span>|</span>
+                                        <a href="error404.html">PolÍtica de Privacidad</a>
                                     </label>
                                 </div>
                                 <div class="text-center my-2">
-                                    <button type="submit" class="btn reservation-button">Enviar</button>
+                                    <button type="submit" class="btn fs-4 reservation-button">Enviar</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex justify-content-center mt-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  mt-5">
                     <div class="container">
-                        <div class="card border-contact">
-                            <h2 class="card-title text-center title-hoteldc">Visitanos</h2>
-                            <div class="pb-3 ps-4">
-                                <h4><i class="fa-solid fa-location-dot mx-2" style="color: #f7f7f7;"></i>Paraiso Alisur <span class="number">3657</span>, Córdoba, Argentina</h4>              
+                        <div data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="2000" data-aos-once="true" class="card border-contact">
+                            <h2 class="card-title text-center title-hoteldc">Visítanos</h2>
+                            <div class="pb-3 ">
+                                <h3 class="ps-4"><i class="fa-solid fa-location-dot mx-2" style="color: #f7f7f7;"></i>Paraiso Alisur <span class="number">3657</span>, Córdoba, Argentina</h3> 
+                                <div class="text-center p-3">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.1073320868553!2d-64.25836462953023!3d-31.411862425362525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1695681332278!5m2!1ses!2sar" width="100%" class=" mb-4 map"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
                             </div>
-                            <div class="ratio ratio-1x1">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.1073320868553!2d-64.25836462953023!3d-31.411862425362525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1695681332278!5m2!1ses!2sar" width="100%" class="p-4" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -118,11 +121,11 @@
             <div class="col-sm-12 col-md-3 my-3 text-center">
                 <div class="d-flex justify-content-center mt-5">
                     <a href="../index.html">
-                        <img src="../assets/imagenes/logo.png" class="w-75" alt="logo-hotel">
+                        <img src="../assets/imagenes/logo.png"  data-aos="flip-left" data-aos-duration="3000" data-aos-once="true" class="w-75" alt="logo del hotel">
                     </a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 text-center">
                 <h4 class="text-center">ACERCA DE HOTEL DULCE CALMA</h4>
                 <ul class="text-start link-footer">
                     <li class="fs-4"><a href="error404.html">Quienes somos</a></li>
@@ -130,7 +133,7 @@
                     <li class="fs-4"><a href="error404.html">Trabaja con nosotros</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 text-center">
                 <h4 class="text-center">RESERVA CON CONFIANZA</h4>
                     <ul class="text-start link-footer">
                     <li class="fs-4"><a href="error404.html">¿Cómo hacer una reserva?</a></li>
@@ -141,10 +144,10 @@
                     <li class="fs-4"><a href="error404.html">Política de cancelación de reserva</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3 my-3 pe-3 text-center">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" class="col-sm-12 col-md-3 my-3 pe-3 text-center ">
                 <h4 class="text-center">REDES SOCIALES</h4>
                     <ul class="text-start d-flex justify-content-center link-footer">
-                        <li class="fs-4 p-3"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>
+                        <li class="fs-4 p-3"><a  href="https://www.facebook.com/" target="_blank"><i" data-aos-duration="3000" class="fa-brands fa-square-facebook fa-2xl px-2"></i></a></li>
                         <li class="fs-4 p-3"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl px-2"></i></a></li>
                         <li class="fs-4 p-3"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl px-2"></i></a></li>
                 </ul>
@@ -155,5 +158,10 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
