@@ -1,9 +1,9 @@
+/* mi css esta pensado desde una verion versión mobile y con el uso de Media queries hice los cambios necesarios para la version Desktop*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Akaya Kanadaka";
   background-color: rgb(247, 247, 247);
