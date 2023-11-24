@@ -1,10 +1,10 @@
 .main{
     .image-bg{
-        background-image: url(../assets/imagenes/error/wepik-export-20231121005454MYj5.jpeg);
+        background-image: url(../assets/imagenes/error/error.jpeg);
         .image-error{
             width: 286px;
             height: 335px;
-            background: url(../assets/imagenes/error/ascensor.png);
+            background-image: url(../assets/imagenes/error/ascensor.png);
             position: absolute;
             top: 2%;
             left: 10%;
@@ -24,7 +24,10 @@
         }
         .button-back a{
             text-decoration: map-get($map: $estilo, $key: ninguno );
-            @include fondo-color($color-secundario, $color-principal);
+            color: $color-principal;
+            &:hover{
+                color: $color-secundario;
+            }
             }                   
     }
     
