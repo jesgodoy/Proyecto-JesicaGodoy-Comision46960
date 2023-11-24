@@ -1,9 +1,9 @@
-/* mi css esta pensado desde una verion versión mobile y con el uso de Media queries hice los cambios necesarios para la version Desktop*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Akaya Kanadaka";
   background-color: rgb(247, 247, 247);
@@ -68,7 +68,7 @@ body {
   color: white;
   background-color: rgba(31, 61, 71, 0.3529411765);
   backdrop-filter: blur(3px);
-  transition: 2s;
+  transition: 1s;
 }
 .main .menu-group .card-menu .card-menu-text .menu-link a {
   text-decoration: none;
@@ -273,12 +273,12 @@ body {
   }
 }
 .main .image-bg {
-  background-image: url(../assets/imagenes/error/wepik-export-20231121005454MYj5.jpeg);
+  background-image: url(../assets/imagenes/error/error.jpeg);
 }
 .main .image-bg .image-error {
   width: 286px;
   height: 335px;
-  background: url(../assets/imagenes/error/ascensor.png);
+  background-image: url(../assets/imagenes/error/ascensor.png);
   position: absolute;
   top: 2%;
   left: 10%;
@@ -297,8 +297,10 @@ body {
 }
 .main .image-bg .button-back a {
   text-decoration: none;
-  background-color: rgb(41, 46, 49);
   color: rgb(247, 247, 247);
+}
+.main .image-bg .button-back a:hover {
+  color: rgb(41, 46, 49);
 }
 
 @media screen and (min-width: 992px) {

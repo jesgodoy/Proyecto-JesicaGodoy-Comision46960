@@ -43,7 +43,7 @@
                 color: white;
                 background-color: #1f3d475a;
                 backdrop-filter: blur(3px);
-                transition: map-get($map: $transicion, $key: 2 );
+                transition: map-get($map: $transicion, $key: 1 );
                 .menu-link a{
                     text-decoration: map-get($map: $estilo, $key: ninguno );
                     color: $color-principal;
