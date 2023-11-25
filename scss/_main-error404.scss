@@ -37,7 +37,7 @@
     .main{
         .image-bg{
             .image-error{
-                left: 25%;
+                left: 10%;
             }
             .text-error{
                 margin-top: 80px;
@@ -46,14 +46,4 @@
     
     }
 
-}
-@media screen and (min-width:1200px){
-    .main{
-        .image-bg{
-            .image-error{
-                left: 58%;
-            }
-        }
-        
-}
 }

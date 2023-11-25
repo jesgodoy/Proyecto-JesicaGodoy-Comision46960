@@ -289,15 +289,10 @@ body {
 
 @media screen and (min-width: 992px) {
   .main .image-bg .image-error {
-    left: 25%;
+    left: 10%;
   }
   .main .image-bg .text-error {
     margin-top: 80px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main .image-bg .image-error {
-    left: 58%;
   }
 }
 .footer {
