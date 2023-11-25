@@ -2,8 +2,6 @@
     .border-contact{
         border-radius: map-get($map: $bordes-radius, $key: 30 );
         background: $color-alternativo;
-        width: 100%;
-        height: auto;
         .imput-contact{
             display: block;
             width: 80%;
@@ -33,20 +31,7 @@
                 color: $color-principal;
             }
         }
-        .map{
-            height: 50vh;
-        }
     }
 }    
-
-@media screen and (min-width: 992px) {
-    .main{
-        .border-contact{
-            .map{
-                height: 70vh;
-            }
-        }
-    }
-}
 
 

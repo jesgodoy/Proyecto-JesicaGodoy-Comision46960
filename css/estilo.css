@@ -85,9 +85,6 @@ body {
   background: radial-gradient(circle farthest-side at top center, rgb(247, 247, 247) 0%, rgb(41, 46, 49) 180%);
   border: 3px solid gray;
 }
-.main .card-opinions .opinion {
-  font-size: 1rem;
-}
 
 @media screen and (min-width: 992px) {
   .main .front-hoteldc {
@@ -103,9 +100,6 @@ body {
   }
   .main .form-w {
     width: 75%;
-  }
-  .main .card-opinions .opinion {
-    font-size: 1.7rem;
   }
 }
 .main .text-front-pages {
@@ -230,8 +224,6 @@ body {
 .main .border-contact {
   border-radius: 30px;
   background: rgb(187, 187, 187);
-  width: 100%;
-  height: auto;
 }
 .main .border-contact .imput-contact {
   display: block;
@@ -263,15 +255,7 @@ body {
 .main .border-contact .check-contact a:hover {
   color: rgb(247, 247, 247);
 }
-.main .border-contact .map {
-  height: 50vh;
-}
 
-@media screen and (min-width: 992px) {
-  .main .border-contact .map {
-    height: 70vh;
-  }
-}
 .main .image-bg {
   background-image: url(../assets/imagenes/error/error.jpeg);
 }
@@ -313,7 +297,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .main .image-bg .image-error {
-    left: 60%;
+    left: 30%;
   }
 }
 .footer {
